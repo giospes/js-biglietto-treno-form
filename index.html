@@ -9,7 +9,8 @@
 </head>
 <body>
     <div class="container">
-        <div class="d-flex justify-content-between">
+        <h2 class="text-center">Calcola il prezzo del tuo biglietto</h2>
+        <div class="d-flex justify-content-center gap-4">
             <div class="input-section d-flex flex-column align-items-center">
                 <label for="nome">Nome e Cognome</label>
                 <input type="text" name="Nome" id="nome">
@@ -27,9 +28,35 @@
                 </select>
             </div>
         </div>
-        <div class="input-section d-flex justify-content-center mt-3 gap-2">
-            <button type="button" class="btn btn-primary" id="genera">Genera</button>
-            <button type="button" class="btn btn-warning" id="reset">Reset</button>
+        <div class="input-section d-flex justify-content-center mt-3 gap-5 ">
+            <button type="button" class="btn btn-primary fs-3" id="genera">Genera</button>
+            <button type="button" class="btn btn-warning fs-3" id="reset">Reset</button>
+        </div>
+        <div id="biglietto" class="mt-5 d-none">
+            <h2 class="text-center text-uppercase">Il tuo Biglietto</h2>
+            <section class="d-flex justify-content-between mt-4">
+                <div>
+                    <h3 class="text-uppercase">nome passegero</h3>
+                    <p id="nome-display" class="fs-3"></p>
+                </div>
+                <div>
+                    <h3 class="text-uppercase">offerta</h3>
+                    <p id="offerta-display" class="fs-3">d</p>
+                </div>
+                <div>
+                    <h3 class="text-uppercase">Carrozza</h3>
+                    <p id="carrozza-display" class="fs-3">5</p>
+                </div>
+                <div>
+                    <h3 class="text-uppercase">Codice cp</h3>
+                    <p id="codice-display" class="fs-3">9211</p>
+                </div>
+                <div>
+                    <h3 class="text-uppercase">Costo biglietto</h3>
+                    <p id="price-display" class="fs-3">d</p>
+                </div>
+            </section>
+
         </div>
         
         
